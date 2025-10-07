@@ -97,13 +97,10 @@ class BybitTrader:
         return math.floor(value / step) * step
 
     def notional_to_qty(self, symbol: str, amount_usdt: float, side: str) -> float:
-        # Spot: for market buy, use quoteOrderQty equal to USDT amount
-        if side.lower() == "buy":
-            return amount_usdt
-        # For sell, compute base qty from notional and validate against lot/min
+        # Compute base qty from notional and validate against lot/min
         _, lot, min_qty = self.get_price_tick_and_lot(symbol)
         bid, ask = self.get_best_price(symbol)
-        price = bid or ask
+        price = (ask if side.lower() == "buy" else bid) or (bid or ask)
         if not price:
             raise ValueError("Failed to fetch price for qty calc")
         qty = amount_usdt / price
@@ -133,11 +130,7 @@ class BybitTrader:
                 "timeInForce": time_in_force,
             }
             if order_type.lower() == "market":
-                if side.lower() == "buy":
-                    params["marketUnit"] = "quote"
-                    params["qty"] = str(qty)  # USDT amount
-                else:
-                    params["qty"] = str(qty)  # base amount
+                params["qty"] = str(qty)  # base amount for both buy/sell
             else:
                 params["qty"] = str(qty)
                 if price is not None:
@@ -152,11 +145,7 @@ class BybitTrader:
             "timeInForce": time_in_force,
         }
         if order_type.lower() == "market":
-            if side.lower() == "buy":
-                params["marketUnit"] = "quote"
-                params["qty"] = str(qty)  # USDT amount
-            else:
-                params["qty"] = str(qty)  # base amount
+            params["qty"] = str(qty)  # base amount for both buy/sell
         else:
             params["qty"] = str(qty)
             if price is not None:
