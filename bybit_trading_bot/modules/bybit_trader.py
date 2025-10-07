@@ -134,9 +134,10 @@ class BybitTrader:
             }
             if order_type.lower() == "market":
                 if side.lower() == "buy":
-                    params["quoteOrderQty"] = str(qty)
+                    params["marketUnit"] = "quote"
+                    params["qty"] = str(qty)  # USDT amount
                 else:
-                    params["qty"] = str(qty)
+                    params["qty"] = str(qty)  # base amount
             else:
                 params["qty"] = str(qty)
                 if price is not None:
@@ -152,9 +153,10 @@ class BybitTrader:
         }
         if order_type.lower() == "market":
             if side.lower() == "buy":
-                params["quoteOrderQty"] = str(qty)
+                params["marketUnit"] = "quote"
+                params["qty"] = str(qty)  # USDT amount
             else:
-                params["qty"] = str(qty)
+                params["qty"] = str(qty)  # base amount
         else:
             params["qty"] = str(qty)
             if price is not None:
