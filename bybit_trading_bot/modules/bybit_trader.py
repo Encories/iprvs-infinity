@@ -53,7 +53,6 @@ class BybitTrader:
         tick = float(price_filter.get("tickSize", "0.1"))
         lot = float(lot_size_filter.get("qtyStep", "0.001"))
         min_qty = float(lot_size_filter.get("minOrderQty", lot))
-        # For spot, Bybit can also expose minOrderAmt (quote currency minimal notional)
         min_amt = float(lot_size_filter.get("minOrderAmt", 0) or 0)
         return tick, lot, min_qty, min_amt
 
@@ -67,9 +66,7 @@ class BybitTrader:
             if bid is not None or ask is not None:
                 return bid, ask
         except Exception:
-            # fallback below
             pass
-        # Fallback to tickers endpoint
         res_tk = self._with_retry(self.client.get_tickers, category="spot", symbol=symbol)
         list_ = res_tk.get("result", {}).get("list", [])
         if not list_:
@@ -82,38 +79,52 @@ class BybitTrader:
             return lp, lp
         return bid, ask
 
-    # --- Account helpers
     def ensure_leverage(self, symbol: str, leverage: Optional[int]) -> None:
-        # Spot: no leverage adjustments
         return
 
     def get_position_qty(self, symbol: str) -> float:
-        # Not used on spot; kept for interface compatibility
         return 0.0
 
-    # --- Qty/price rounding
     @staticmethod
     def _round_step(value: float, step: float) -> float:
         if step <= 0:
             return value
         return math.floor(value / step) * step
 
-    def notional_to_qty(self, symbol: str, amount_usdt: float, side: str) -> float:
+    def compute_buy_qty(self, symbol: str, amount_usdt: float) -> Tuple[float, Optional[str]]:
         bid, ask = self.get_best_price(symbol)
-        price = (ask if side.lower() == "buy" else bid) or (bid or ask)
+        price = ask or bid
         if not price:
             raise ValueError("Failed to fetch price for qty calc")
         _, lot, min_qty, min_amt = self.get_spot_filters(symbol)
         qty = self._round_step(amount_usdt / price, lot)
-        # For buys, prefer quote minimal amount when available
-        if side.lower() == "buy" and min_amt > 0 and amount_usdt < min_amt:
-            raise ValueError(f"amount_usdt too small; need at least ~{min_amt:.2f} USDT for buy")
+        note = None
+        # Enforce minimal notional if available
+        if min_amt > 0 and qty * price < min_amt:
+            target_qty = math.ceil((min_amt / price) / lot) * lot
+            note = f"Adjusted to meet min notional: ~{min_amt:.2f} USDT"
+            qty = target_qty
+        # Enforce minimal quantity
+        if qty < min_qty:
+            qty = math.ceil(min_qty / lot) * lot
+            note = (note + "; " if note else "") + f"Raised to min qty {min_qty}"
+        return qty, note
+
+    def notional_to_qty(self, symbol: str, amount_usdt: float, side: str) -> float:
+        if side.lower() == "buy":
+            qty, _ = self.compute_buy_qty(symbol, amount_usdt)
+            return qty
+        bid, ask = self.get_best_price(symbol)
+        price = bid or ask
+        if not price:
+            raise ValueError("Failed to fetch price for qty calc")
+        _, lot, min_qty, _ = self.get_spot_filters(symbol)
+        qty = self._round_step(amount_usdt / price, lot)
         if qty < min_qty:
             required_usdt = min_qty * price
             raise ValueError(f"amount_usdt too small; need at least ~{required_usdt:.2f} USDT for min qty {min_qty}")
         return qty
 
-    # --- Trading ops
     def place_order(
         self,
         symbol: str,
@@ -133,7 +144,7 @@ class BybitTrader:
                 "timeInForce": time_in_force,
             }
             if order_type.lower() == "market":
-                params["qty"] = str(qty)  # base amount for both buy/sell
+                params["qty"] = str(qty)
             else:
                 params["qty"] = str(qty)
                 if price is not None:
@@ -148,7 +159,7 @@ class BybitTrader:
             "timeInForce": time_in_force,
         }
         if order_type.lower() == "market":
-            params["qty"] = str(qty)  # base amount for both buy/sell
+            params["qty"] = str(qty)
         else:
             params["qty"] = str(qty)
             if price is not None:

@@ -43,6 +43,9 @@ class TelegramBot:
             f"Status: {data.get('status')}",
             f"OrderId: {data.get('orderId')}",
         ]
+        note = data.get('note')
+        if note:
+            parts.append(f"Note: {note}")
         self._send("\n".join(parts))
 
     def send_error_notification(self, text: str, context: Optional[dict] = None) -> None:
