@@ -1,0 +1,487 @@
+2025-10-06 13:52:12 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 13:52:12 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 13:52:12 | ERROR | bybit_trading_bot | cloudflared binary not found. Install from https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/
+2025-10-06 13:52:23 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 13:52:23 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 13:52:23 | ERROR | bybit_trading_bot | cloudflared binary not found. Install from https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/
+2025-10-06 13:57:48 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 13:57:48 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 13:57:48 | ERROR | bybit_trading_bot | cloudflared binary not found. Install from https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/
+2025-10-06 13:59:43 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 13:59:43 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: C:\ton\cloudflared.exe tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 13:59:43 | ERROR | bybit_trading_bot | cloudflared crashed
+Traceback (most recent call last):
+  File "C:\crypto-infinity\bybit_trading_bot\modules\tunnel.py", line 40, in run
+    self.process = subprocess.Popen(
+                   ~~~~~~~~~~~~~~~~^
+        cmd,
+        ^^^^
+    ...<3 lines>...
+        universal_newlines=True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Владимир\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1038, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1550, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+OSError: [WinError 216] Эта версия "%1" не совместима с версией Windows, работающей на этом компьютере. Проверьте сведения о системе, а затем обратитесь к издателю программного обеспечения
+2025-10-06 14:02:13 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 14:02:13 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: C:\ton\cloudflared.exe tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 14:02:13 | ERROR | bybit_trading_bot | cloudflared crashed
+Traceback (most recent call last):
+  File "C:\crypto-infinity\bybit_trading_bot\modules\tunnel.py", line 40, in run
+    self.process = subprocess.Popen(
+                   ~~~~~~~~~~~~~~~~^
+        cmd,
+        ^^^^
+    ...<3 lines>...
+        universal_newlines=True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Владимир\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1038, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Владимир\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1550, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+OSError: [WinError 216] Эта версия "%1" не совместима с версией Windows, работающей на этом компьютере. Проверьте сведения о системе, а затем обратитесь к издателю программного обеспечения
+2025-10-06 14:04:12 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 14:04:12 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 14:04:12 | ERROR | bybit_trading_bot | cloudflared binary not found. Install from https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/
+2025-10-06 14:04:38 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 14:04:38 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 14:04:38 | ERROR | bybit_trading_bot | cloudflared binary not found. Install from https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/
+2025-10-06 14:07:13 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 14:07:13 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 14:07:13 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:13Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2025-10-06 14:07:13 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:13Z INF Requesting new quick Tunnel on trycloudflare.com...
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF |  https://discussions-airline-sides-arch.trycloudflare.com                                  |
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | Tunnel URL: https://discussions-airline-sides-arch.trycloudflare.com
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | Public webhook URL: https://discussions-airline-sides-arch.trycloudflare.com/webhook
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | Telegram sent: Public webhook URL: https://discussions-airline-sides-arch.trycloudflare.com/webhook
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF Version 2025.8.1 (Checksum b5d598b00cc3a28cabc5812d9f762819334614bae452db4e7f23eefe7b081556)
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF GOOS: windows, GOVersion: go1.24.2, GoArch: amd64
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF Settings: map[ha-connections:1 no-autoupdate:true protocol:quic url:http://0.0.0.0:5000]
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF Environmental variables map[TUNNEL_ENABLE:true]
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF cloudflared will not automatically update on Windows systems.
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF Generated Connector ID: bdf65561-f7dd-4e0c-b21d-d971965247ab
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF Initial protocol quic
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z ERR Cannot determine default origin certificate path. No file cert.pem in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]. You need to specify the origin certificate path by specifying the origincert option in the configuration file, or set TUNNEL_ORIGIN_CERT environment variable originCertPath=
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.13
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 14:07:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:18Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2025-10-06 14:07:19 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:07:19Z INF Registered tunnel connection connIndex=0 connection=63ffb2fa-2f2d-45bf-8478-5aab9eddc0fb event=0 ip=198.41.200.13 location=waw06 protocol=quic
+2025-10-06 14:09:08 | ERROR | bybit_trading_bot | Invalid fallback key
+2025-10-06 14:10:14 | ERROR | bybit_trading_bot | Invalid fallback key
+2025-10-06 14:10:31 | INFO | bybit_trading_bot | Signal received: {'ts': None, 'action': 'open', 'symbol': 'BTCUSDT', 'order_type': 'market', 'leverage': None, 'direction': 'long', 'amount_usdt': 50.0}
+2025-10-06 14:10:33 | ERROR | bybit_trading_bot | Calculated qty <= 0 | extra={'ts': None, 'action': 'open', 'symbol': 'BTCUSDT', 'order_type': 'market', 'leverage': None, 'direction': 'long', 'amount_usdt': 50.0}
+2025-10-06 14:11:03 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:03Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-10-06 14:11:03 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:03Z ERR failed to run the datagram handler error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.13
+2025-10-06 14:11:03 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:03Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.13
+2025-10-06 14:11:03 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:03Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.13
+2025-10-06 14:11:03 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:03Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.13
+2025-10-06 14:11:03 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:03Z ERR Connection terminated connIndex=0
+2025-10-06 14:11:03 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:03Z ERR no more connections active and exiting
+2025-10-06 14:11:03 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:03Z INF Tunnel server stopped
+2025-10-06 14:11:03 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:03Z INF Metrics server stopped
+2025-10-06 14:11:03 | WARNING | bybit_trading_bot | cloudflared exited with code 0
+2025-10-06 14:11:06 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 14:11:06 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 14:11:06 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:06Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2025-10-06 14:11:06 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:06Z INF Requesting new quick Tunnel on trycloudflare.com...
+2025-10-06 14:11:11 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 14:11:11 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2025-10-06 14:11:11 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF |  https://investigation-cashiers-cottages-remarks.trycloudflare.com                         |
+2025-10-06 14:11:11 | INFO | bybit_trading_bot | Tunnel URL: https://investigation-cashiers-cottages-remarks.trycloudflare.com
+2025-10-06 14:11:11 | INFO | bybit_trading_bot | Public webhook URL: https://investigation-cashiers-cottages-remarks.trycloudflare.com/webhook
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | Telegram sent: Public webhook URL: https://investigation-cashiers-cottages-remarks.trycloudflare.com/webhook
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF Version 2025.8.1 (Checksum b5d598b00cc3a28cabc5812d9f762819334614bae452db4e7f23eefe7b081556)
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF GOOS: windows, GOVersion: go1.24.2, GoArch: amd64
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF Settings: map[ha-connections:1 no-autoupdate:true protocol:quic url:http://0.0.0.0:5000]
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF Environmental variables map[TUNNEL_ENABLE:true]
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF cloudflared will not automatically update on Windows systems.
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF Generated Connector ID: ffd6b1c8-83de-4dd8-8fe8-7d53966d25b7
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF Initial protocol quic
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z ERR Cannot determine default origin certificate path. No file cert.pem in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]. You need to specify the origin certificate path by specifying the origincert option in the configuration file, or set TUNNEL_ORIGIN_CERT environment variable originCertPath=
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.27
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2025-10-06 14:11:12 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:11:11Z INF Registered tunnel connection connIndex=0 connection=157bb34a-7104-4e6e-87f4-7ab6762e5eb6 event=0 ip=198.41.192.27 location=msq01 protocol=quic
+2025-10-06 14:11:31 | INFO | bybit_trading_bot | Signal received: {'ts': None, 'action': 'open', 'symbol': 'BTCUSDT', 'order_type': 'market', 'leverage': None, 'direction': 'long', 'amount_usdt': 50.0}
+2025-10-06 14:15:07 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:07Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-10-06 14:15:07 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:07Z ERR failed to run the datagram handler error="context canceled" connIndex=0 event=0 ip=198.41.192.27
+2025-10-06 14:15:07 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:07Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.27
+2025-10-06 14:15:07 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:07Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.27
+2025-10-06 14:15:07 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:07Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.27
+2025-10-06 14:15:07 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:07Z ERR Connection terminated connIndex=0
+2025-10-06 14:15:07 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:07Z ERR no more connections active and exiting
+2025-10-06 14:15:07 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:07Z INF Tunnel server stopped
+2025-10-06 14:15:07 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:07Z INF Metrics server stopped
+2025-10-06 14:15:07 | WARNING | bybit_trading_bot | cloudflared exited with code 0
+2025-10-06 14:15:34 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 14:15:34 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 14:15:34 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:34Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2025-10-06 14:15:34 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:34Z INF Requesting new quick Tunnel on trycloudflare.com...
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF |  https://style-ids-chester-pest.trycloudflare.com                                          |
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | Tunnel URL: https://style-ids-chester-pest.trycloudflare.com
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | Public webhook URL: https://style-ids-chester-pest.trycloudflare.com/webhook
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | Telegram sent: Public webhook URL: https://style-ids-chester-pest.trycloudflare.com/webhook
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF Version 2025.8.1 (Checksum b5d598b00cc3a28cabc5812d9f762819334614bae452db4e7f23eefe7b081556)
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF GOOS: windows, GOVersion: go1.24.2, GoArch: amd64
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF Settings: map[ha-connections:1 no-autoupdate:true protocol:quic url:http://0.0.0.0:5000]
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF Environmental variables map[TUNNEL_ENABLE:true]
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF cloudflared will not automatically update on Windows systems.
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF Generated Connector ID: 223b2d88-ec46-435a-8f8a-577690ff318f
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF Initial protocol quic
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z ERR Cannot determine default origin certificate path. No file cert.pem in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]. You need to specify the origin certificate path by specifying the origincert option in the configuration file, or set TUNNEL_ORIGIN_CERT environment variable originCertPath=
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 14:15:38 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:38Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2025-10-06 14:15:40 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:15:40Z INF Registered tunnel connection connIndex=0 connection=a5267e3f-d90e-4fca-a9f8-7e1702b9a399 event=0 ip=198.41.192.47 location=msq01 protocol=quic
+2025-10-06 14:15:56 | INFO | bybit_trading_bot | Signal received: {'ts': None, 'action': 'open', 'symbol': 'BTCUSDT', 'order_type': 'market', 'leverage': None, 'direction': 'long', 'amount_usdt': 50.0}
+2025-10-06 14:15:56 | INFO | bybit_trading_bot | TEST MODE: skip set_leverage
+2025-10-06 14:15:57 | ERROR | bybit_trading_bot | Calculated qty <= 0 | extra={'ts': None, 'action': 'open', 'symbol': 'BTCUSDT', 'order_type': 'market', 'leverage': None, 'direction': 'long', 'amount_usdt': 50.0}
+2025-10-06 14:16:43 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:16:43Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-10-06 14:16:43 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:16:43Z ERR failed to run the datagram handler error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.47
+2025-10-06 14:16:43 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:16:43Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.47
+2025-10-06 14:16:43 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:16:43Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.47
+2025-10-06 14:16:43 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:16:43Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.47
+2025-10-06 14:16:43 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:16:43Z ERR Connection terminated connIndex=0
+2025-10-06 14:16:43 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:16:43Z ERR no more connections active and exiting
+2025-10-06 14:16:43 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:16:43Z INF Tunnel server stopped
+2025-10-06 14:16:43 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:16:43Z INF Metrics server stopped
+2025-10-06 14:16:43 | WARNING | bybit_trading_bot | cloudflared exited with code 0
+2025-10-06 14:17:39 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 14:17:39 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 14:17:39 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:39Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2025-10-06 14:17:39 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:39Z INF Requesting new quick Tunnel on trycloudflare.com...
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF |  https://engineering-granted-black-momentum.trycloudflare.com                              |
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | Tunnel URL: https://engineering-granted-black-momentum.trycloudflare.com
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | Public webhook URL: https://engineering-granted-black-momentum.trycloudflare.com/webhook
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | Telegram sent: Public webhook URL: https://engineering-granted-black-momentum.trycloudflare.com/webhook
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF Version 2025.8.1 (Checksum b5d598b00cc3a28cabc5812d9f762819334614bae452db4e7f23eefe7b081556)
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF GOOS: windows, GOVersion: go1.24.2, GoArch: amd64
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF Settings: map[ha-connections:1 no-autoupdate:true protocol:quic url:http://0.0.0.0:5000]
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF Environmental variables map[TUNNEL_ENABLE:true]
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF cloudflared will not automatically update on Windows systems.
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF Generated Connector ID: d354cc30-eab0-43de-a300-3ff047620a7a
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF Initial protocol quic
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z ERR Cannot determine default origin certificate path. No file cert.pem in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]. You need to specify the origin certificate path by specifying the origincert option in the configuration file, or set TUNNEL_ORIGIN_CERT environment variable originCertPath=
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.13
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 14:17:45 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:45Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2025-10-06 14:17:46 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:17:46Z INF Registered tunnel connection connIndex=0 connection=5ae66067-2ee0-4cc5-91d6-b89be13a1941 event=0 ip=198.41.200.13 location=waw02 protocol=quic
+2025-10-06 14:18:02 | INFO | bybit_trading_bot | Signal received: {'ts': None, 'action': 'open', 'symbol': 'BTCUSDT', 'order_type': 'market', 'leverage': None, 'direction': 'long', 'amount_usdt': 10.0}
+2025-10-06 14:18:02 | INFO | bybit_trading_bot | TEST MODE: skip set_leverage
+2025-10-06 14:18:03 | ERROR | bybit_trading_bot | amount_usdt too small; need at least ~123.85 USDT for min qty 0.001 | extra={'ts': None, 'action': 'open', 'symbol': 'BTCUSDT', 'order_type': 'market', 'leverage': None, 'direction': 'long', 'amount_usdt': 10.0}
+2025-10-06 14:18:03 | ERROR | bybit_trading_bot | Telegram send failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 23
+Traceback (most recent call last):
+  File "C:\crypto-infinity\bybit_trading_bot\modules\webhook_server.py", line 163, in webhook_handler
+    qty = trader.notional_to_qty(symbol, amount_usdt, side)
+  File "C:\crypto-infinity\bybit_trading_bot\modules\bybit_trader.py", line 115, in notional_to_qty
+    raise ValueError(f"amount_usdt too small; need at least ~{required_usdt:.2f} USDT for min qty {min_qty}")
+ValueError: amount_usdt too small; need at least ~123.85 USDT for min qty 0.001
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\crypto-infinity\bybit_trading_bot\modules\telegram_bot.py", line 14, in _send
+    self.bot.send_message(self.chat_id, text)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\crypto-infinity\.venv\Lib\site-packages\telebot\__init__.py", line 1811, in send_message
+    apihelper.send_message(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, chat_id, text,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        suggested_post_parameters=suggested_post_parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\crypto-infinity\.venv\Lib\site-packages\telebot\apihelper.py", line 282, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\crypto-infinity\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\crypto-infinity\.venv\Lib\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 23
+2025-10-06 14:18:28 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:18:28Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-10-06 14:18:28 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:18:28Z ERR failed to run the datagram handler error="context canceled" connIndex=0 event=0 ip=198.41.200.13
+2025-10-06 14:18:28 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:18:28Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.13
+2025-10-06 14:18:28 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:18:28Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.13
+2025-10-06 14:18:28 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:18:28Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.13
+2025-10-06 14:18:28 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:18:28Z ERR Connection terminated connIndex=0
+2025-10-06 14:18:28 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:18:28Z ERR no more connections active and exiting
+2025-10-06 14:18:28 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:18:28Z INF Tunnel server stopped
+2025-10-06 14:18:28 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:18:28Z INF Metrics server stopped
+2025-10-06 14:18:28 | WARNING | bybit_trading_bot | cloudflared exited with code 0
+2025-10-06 14:20:14 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 14:20:14 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 14:20:14 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:14Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2025-10-06 14:20:14 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:14Z INF Requesting new quick Tunnel on trycloudflare.com...
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF |  https://own-diffs-writing-oct.trycloudflare.com                                           |
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | Tunnel URL: https://own-diffs-writing-oct.trycloudflare.com
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | Public webhook URL: https://own-diffs-writing-oct.trycloudflare.com/webhook
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | Telegram sent: Public webhook URL: https://own-diffs-writing-oct.trycloudflare.com/webhook
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF Version 2025.8.1 (Checksum b5d598b00cc3a28cabc5812d9f762819334614bae452db4e7f23eefe7b081556)
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF GOOS: windows, GOVersion: go1.24.2, GoArch: amd64
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF Settings: map[ha-connections:1 no-autoupdate:true protocol:quic url:http://0.0.0.0:5000]
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF Environmental variables map[TUNNEL_ENABLE:true]
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF cloudflared will not automatically update on Windows systems.
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF Generated Connector ID: 8af03209-96bc-4eb7-844d-2a35ff99d8be
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF Initial protocol quic
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z ERR Cannot determine default origin certificate path. No file cert.pem in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]. You need to specify the origin certificate path by specifying the origincert option in the configuration file, or set TUNNEL_ORIGIN_CERT environment variable originCertPath=
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2025-10-06 14:20:20 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T11:20:20Z INF Registered tunnel connection connIndex=0 connection=0ef37449-bd16-45b1-a2b0-eeb4a85bbb0a event=0 ip=198.41.200.53 location=waw05 protocol=quic
+2025-10-06 14:20:35 | INFO | bybit_trading_bot | Signal received: {'ts': None, 'action': 'open', 'symbol': 'BTCUSDT', 'order_type': 'market', 'leverage': None, 'direction': 'long', 'amount_usdt': 10.0}
+2025-10-06 14:20:35 | INFO | bybit_trading_bot | TEST MODE: skip set_leverage
+2025-10-06 14:20:36 | ERROR | bybit_trading_bot | amount_usdt too small; need at least ~123.83 USDT for min qty 0.001 | extra={'ts': None, 'action': 'open', 'symbol': 'BTCUSDT', 'order_type': 'market', 'leverage': None, 'direction': 'long', 'amount_usdt': 10.0}
+2025-10-06 14:20:36 | ERROR | bybit_trading_bot | Telegram send failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 23
+Traceback (most recent call last):
+  File "C:\crypto-infinity\bybit_trading_bot\modules\webhook_server.py", line 168, in webhook_handler
+    qty = trader.notional_to_qty(symbol, amount_usdt, side)
+  File "C:\crypto-infinity\bybit_trading_bot\modules\bybit_trader.py", line 115, in notional_to_qty
+    raise ValueError(f"amount_usdt too small; need at least ~{required_usdt:.2f} USDT for min qty {min_qty}")
+ValueError: amount_usdt too small; need at least ~123.83 USDT for min qty 0.001
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\crypto-infinity\bybit_trading_bot\modules\telegram_bot.py", line 14, in _send
+    self.bot.send_message(self.chat_id, text)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\crypto-infinity\.venv\Lib\site-packages\telebot\__init__.py", line 1811, in send_message
+    apihelper.send_message(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        self.token, chat_id, text,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        suggested_post_parameters=suggested_post_parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\crypto-infinity\.venv\Lib\site-packages\telebot\apihelper.py", line 282, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\crypto-infinity\.venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\crypto-infinity\.venv\Lib\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 23
+2025-10-06 15:00:25 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T12:00:25Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2025-10-06 15:39:29 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T12:39:29Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-10-06 15:39:29 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T12:39:29Z ERR failed to run the datagram handler error="context canceled" connIndex=0 event=0 ip=198.41.200.53
+2025-10-06 15:39:29 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T12:39:29Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.53
+2025-10-06 15:39:29 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T12:39:29Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.53
+2025-10-06 15:39:29 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T12:39:29Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.53
+2025-10-06 15:39:29 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T12:39:29Z ERR Connection terminated connIndex=0
+2025-10-06 15:39:29 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T12:39:29Z ERR no more connections active and exiting
+2025-10-06 15:39:29 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T12:39:29Z INF Tunnel server stopped
+2025-10-06 15:39:29 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T12:39:29Z INF Metrics server stopped
+2025-10-06 15:39:29 | WARNING | bybit_trading_bot | cloudflared exited with code 0
+2025-10-06 17:16:49 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 17:16:49 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 17:16:49 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:49Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2025-10-06 17:16:49 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:49Z INF Requesting new quick Tunnel on trycloudflare.com...
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF |  https://arg-allergy-recovered-arthritis.trycloudflare.com                                 |
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | Tunnel URL: https://arg-allergy-recovered-arthritis.trycloudflare.com
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | Public webhook URL: https://arg-allergy-recovered-arthritis.trycloudflare.com/webhook
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | Telegram sent
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF Version 2025.8.1 (Checksum b5d598b00cc3a28cabc5812d9f762819334614bae452db4e7f23eefe7b081556)
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF GOOS: windows, GOVersion: go1.24.2, GoArch: amd64
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF Settings: map[ha-connections:1 no-autoupdate:true protocol:quic url:http://0.0.0.0:5000]
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF Environmental variables map[TUNNEL_ENABLE:true]
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF cloudflared will not automatically update on Windows systems.
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF Generated Connector ID: 12207ef7-72a9-4793-9d7f-a2b1c2d0d3f6
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF Initial protocol quic
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z ERR Cannot determine default origin certificate path. No file cert.pem in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]. You need to specify the origin certificate path by specifying the origincert option in the configuration file, or set TUNNEL_ORIGIN_CERT environment variable originCertPath=
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.43
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2025-10-06 17:16:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T14:16:54Z INF Registered tunnel connection connIndex=0 connection=853574a6-29ab-43b9-8c85-4577b97160e8 event=0 ip=198.41.200.43 location=waw02 protocol=quic
+2025-10-06 18:30:11 | ERROR | bybit_trading_bot | Invalid fallback key
+2025-10-06 18:30:11 | ERROR | bybit_trading_bot | Invalid fallback key
+2025-10-06 18:30:11 | INFO | bybit_trading_bot | Telegram sent
+2025-10-06 18:30:11 | INFO | bybit_trading_bot | Telegram sent
+2025-10-06 18:42:51 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:51Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-10-06 18:42:51 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:51Z ERR failed to run the datagram handler error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.43
+2025-10-06 18:42:51 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:51Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.43
+2025-10-06 18:42:51 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:51Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.43
+2025-10-06 18:42:51 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:51Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.43
+2025-10-06 18:42:51 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:51Z ERR Connection terminated connIndex=0
+2025-10-06 18:42:51 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:51Z ERR no more connections active and exiting
+2025-10-06 18:42:51 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:51Z INF Tunnel server stopped
+2025-10-06 18:42:51 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:51Z INF Metrics server stopped
+2025-10-06 18:42:51 | WARNING | bybit_trading_bot | cloudflared exited with code 0
+2025-10-06 18:42:54 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 18:42:54 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 18:42:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:54Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2025-10-06 18:42:54 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:54Z INF Requesting new quick Tunnel on trycloudflare.com...
+2025-10-06 18:42:58 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 18:42:58 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2025-10-06 18:42:58 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF |  https://forum-penetration-extensive-cultures.trycloudflare.com                            |
+2025-10-06 18:42:58 | INFO | bybit_trading_bot | Tunnel URL: https://forum-penetration-extensive-cultures.trycloudflare.com
+2025-10-06 18:42:58 | INFO | bybit_trading_bot | Public webhook URL: https://forum-penetration-extensive-cultures.trycloudflare.com/webhook
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | Telegram sent
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF Version 2025.8.1 (Checksum b5d598b00cc3a28cabc5812d9f762819334614bae452db4e7f23eefe7b081556)
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF GOOS: windows, GOVersion: go1.24.2, GoArch: amd64
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF Settings: map[ha-connections:1 no-autoupdate:true protocol:quic url:http://0.0.0.0:5000]
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF Environmental variables map[TUNNEL_ENABLE:true]
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF cloudflared will not automatically update on Windows systems.
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF Generated Connector ID: 494e3bf4-18b9-46c7-851d-350b30de71b6
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF Initial protocol quic
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z ERR Cannot determine default origin certificate path. No file cert.pem in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]. You need to specify the origin certificate path by specifying the origincert option in the configuration file, or set TUNNEL_ORIGIN_CERT environment variable originCertPath=
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.227
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 18:42:59 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:42:58Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2025-10-06 18:43:00 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:43:00Z INF Registered tunnel connection connIndex=0 connection=4b9f55c5-8472-4520-bbe6-e3ecbe24b11f event=0 ip=198.41.192.227 location=msq01 protocol=quic
+2025-10-06 18:50:05 | INFO | bybit_trading_bot | Signal received: {'ts': None, 'action': 'open', 'symbol': 'PEPEUSDT', 'order_type': 'market', 'leverage': None, 'note': '1.2', 'direction': 'long', 'amount_usdt': 10.0}
+2025-10-06 18:50:05 | INFO | bybit_trading_bot | Signal received: {'ts': None, 'action': 'open', 'symbol': 'PEPEUSDT', 'order_type': 'market', 'leverage': None, 'note': '1.1', 'direction': 'long', 'amount_usdt': 10.0}
+2025-10-06 18:50:05 | INFO | bybit_trading_bot | Telegram sent
+2025-10-06 18:50:05 | INFO | bybit_trading_bot | TEST MODE: skip set_leverage
+2025-10-06 18:50:05 | INFO | bybit_trading_bot | Telegram sent
+2025-10-06 18:50:05 | INFO | bybit_trading_bot | TEST MODE: skip set_leverage
+2025-10-06 18:50:08 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:50:08Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://0.0.0.0:5000
+2025-10-06 18:50:08 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:50:08Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://forum-penetration-extensive-cultures.trycloudflare.com/webhook event=0 ip=198.41.192.227 type=http
+2025-10-06 18:50:08 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:50:08Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://0.0.0.0:5000
+2025-10-06 18:50:08 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T15:50:08Z ERR Request failed error="Incoming request ended abruptly: context canceled" connIndex=0 dest=https://forum-penetration-extensive-cultures.trycloudflare.com/webhook event=0 ip=198.41.192.227 type=http
+2025-10-06 18:50:11 | INFO | bybit_trading_bot | Telegram sent
+2025-10-06 18:50:11 | INFO | bybit_trading_bot | Telegram sent
+2025-10-06 19:00:04 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:04Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-10-06 19:00:04 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:04Z ERR failed to run the datagram handler error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.192.227
+2025-10-06 19:00:04 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:04Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.227
+2025-10-06 19:00:04 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:04Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.227
+2025-10-06 19:00:04 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:04Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.227
+2025-10-06 19:00:04 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:04Z ERR Connection terminated connIndex=0
+2025-10-06 19:00:04 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:04Z ERR no more connections active and exiting
+2025-10-06 19:00:04 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:04Z INF Tunnel server stopped
+2025-10-06 19:00:04 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:04Z INF Metrics server stopped
+2025-10-06 19:00:04 | WARNING | bybit_trading_bot | cloudflared exited with code 0
+2025-10-06 19:00:06 | INFO | bybit_trading_bot | Logger initialized
+2025-10-06 19:00:06 | INFO | bybit_trading_bot | Starting Cloudflare Tunnel: cloudflared tunnel --url http://0.0.0.0:5000 --no-autoupdate
+2025-10-06 19:00:07 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:07Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2025-10-06 19:00:07 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:07Z INF Requesting new quick Tunnel on trycloudflare.com...
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF |  https://pollution-temporary-divided-permalink.trycloudflare.com                           |
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | Tunnel URL: https://pollution-temporary-divided-permalink.trycloudflare.com
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | Public webhook URL: https://pollution-temporary-divided-permalink.trycloudflare.com/webhook
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | Telegram sent
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF +--------------------------------------------------------------------------------------------+
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF Version 2025.8.1 (Checksum b5d598b00cc3a28cabc5812d9f762819334614bae452db4e7f23eefe7b081556)
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF GOOS: windows, GOVersion: go1.24.2, GoArch: amd64
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF Settings: map[ha-connections:1 no-autoupdate:true protocol:quic url:http://0.0.0.0:5000]
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF Environmental variables map[TUNNEL_ENABLE:true]
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF cloudflared will not automatically update on Windows systems.
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF Generated Connector ID: 6b723c13-bea9-4fe3-b002-2b1e02113522
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF Initial protocol quic
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z ERR Cannot determine default origin certificate path. No file cert.pem in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]. You need to specify the origin certificate path by specifying the origincert option in the configuration file, or set TUNNEL_ORIGIN_CERT environment variable originCertPath=
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF ICMP proxy will use 192.168.0.229 as source for IPv4
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF ICMP proxy will use fe80::ef73:cfd2:331e:c7 in zone Р‘РµСЃРїСЂРѕРІРѕРґРЅР°СЏ СЃРµС‚СЊ 2 as source for IPv6
+2025-10-06 19:00:15 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:15Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2025-10-06 19:00:17 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T16:00:17Z INF Registered tunnel connection connIndex=0 connection=f8543ed5-e2cc-45d5-901b-cf1d5d82e1c9 event=0 ip=198.41.192.47 location=msq01 protocol=quic
+2025-10-06 19:25:04 | INFO | bybit_trading_bot | Signal received: {'ts': None, 'action': 'open', 'symbol': 'WLFIUSDT', 'order_type': 'market', 'leverage': None, 'note': '1.9', 'direction': 'long', 'amount_usdt': 10.0}
+2025-10-06 19:25:04 | INFO | bybit_trading_bot | Telegram sent
+2025-10-06 19:25:04 | INFO | bybit_trading_bot | TEST MODE: simulate place_order {'category': 'spot', 'symbol': 'WLFIUSDT', 'side': 'Buy', 'orderType': 'Market', 'timeInForce': 'IOC', 'quoteOrderQty': '10.0'}
+2025-10-06 19:25:04 | INFO | bybit_trading_bot | Order event: {'status': 'SIMULATED', 'result': {'orderId': None}, 'request': {'category': 'spot', 'symbol': 'WLFIUSDT', 'side': 'Buy', 'orderType': 'Market', 'timeInForce': 'IOC', 'quoteOrderQty': '10.0'}}
+2025-10-06 19:25:05 | INFO | bybit_trading_bot | Telegram sent
+2025-10-06 20:17:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T17:17:18Z INF Initiating graceful shutdown due to signal interrupt ...
+2025-10-06 20:17:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T17:17:18Z ERR failed to run the datagram handler error="context canceled" connIndex=0 event=0 ip=198.41.192.47
+2025-10-06 20:17:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T17:17:18Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.47
+2025-10-06 20:17:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T17:17:18Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.192.47
+2025-10-06 20:17:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T17:17:18Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.47
+2025-10-06 20:17:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T17:17:18Z ERR Connection terminated connIndex=0
+2025-10-06 20:17:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T17:17:18Z ERR no more connections active and exiting
+2025-10-06 20:17:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T17:17:18Z INF Tunnel server stopped
+2025-10-06 20:17:18 | INFO | bybit_trading_bot | cloudflared: 2025-10-06T17:17:18Z INF Metrics server stopped
+2025-10-06 20:17:18 | WARNING | bybit_trading_bot | cloudflared exited with code 0
