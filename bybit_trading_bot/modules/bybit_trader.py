@@ -99,12 +99,10 @@ class BybitTrader:
         _, lot, min_qty, min_amt = self.get_spot_filters(symbol)
         qty = self._round_step(amount_usdt / price, lot)
         note = None
-        # Enforce minimal notional if available
         if min_amt > 0 and qty * price < min_amt:
             target_qty = math.ceil((min_amt / price) / lot) * lot
             note = f"Adjusted to meet min notional: ~{min_amt:.2f} USDT"
             qty = target_qty
-        # Enforce minimal quantity
         if qty < min_qty:
             qty = math.ceil(min_qty / lot) * lot
             note = (note + "; " if note else "") + f"Raised to min qty {min_qty}"
@@ -142,13 +140,8 @@ class BybitTrader:
                 "side": side.capitalize(),
                 "orderType": order_type.capitalize(),
                 "timeInForce": time_in_force,
+                "qty": str(qty),
             }
-            if order_type.lower() == "market":
-                params["qty"] = str(qty)
-            else:
-                params["qty"] = str(qty)
-                if price is not None:
-                    params["price"] = str(price)
             self.logger.info(f"TEST MODE: simulate place_order {params}")
             return {"status": "SIMULATED", "result": {"orderId": None}, "request": params}
         params: Dict[str, Any] = {
@@ -157,13 +150,8 @@ class BybitTrader:
             "side": side.capitalize(),
             "orderType": order_type.capitalize(),
             "timeInForce": time_in_force,
+            "qty": str(qty),
         }
-        if order_type.lower() == "market":
-            params["qty"] = str(qty)
-        else:
-            params["qty"] = str(qty)
-            if price is not None:
-                params["price"] = str(price)
         res = self._with_retry(self.client.place_order, **params)
         return res
 
