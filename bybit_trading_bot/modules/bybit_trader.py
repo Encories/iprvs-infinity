@@ -46,14 +46,16 @@ class BybitTrader:
             raise ValueError(f"Symbol not found or not spot: {symbol}")
         return info_list[0]
 
-    def get_price_tick_and_lot(self, symbol: str) -> Tuple[float, float, float]:
+    def get_spot_filters(self, symbol: str) -> Tuple[float, float, float, float]:
         info = self.get_instrument_info(symbol)
         price_filter = info.get("priceFilter", {})
         lot_size_filter = info.get("lotSizeFilter", {})
         tick = float(price_filter.get("tickSize", "0.1"))
         lot = float(lot_size_filter.get("qtyStep", "0.001"))
         min_qty = float(lot_size_filter.get("minOrderQty", lot))
-        return tick, lot, min_qty
+        # For spot, Bybit can also expose minOrderAmt (quote currency minimal notional)
+        min_amt = float(lot_size_filter.get("minOrderAmt", 0) or 0)
+        return tick, lot, min_qty, min_amt
 
     def get_best_price(self, symbol: str) -> Tuple[Optional[float], Optional[float]]:
         try:
@@ -97,14 +99,15 @@ class BybitTrader:
         return math.floor(value / step) * step
 
     def notional_to_qty(self, symbol: str, amount_usdt: float, side: str) -> float:
-        # Compute base qty from notional and validate against lot/min
-        _, lot, min_qty = self.get_price_tick_and_lot(symbol)
         bid, ask = self.get_best_price(symbol)
         price = (ask if side.lower() == "buy" else bid) or (bid or ask)
         if not price:
             raise ValueError("Failed to fetch price for qty calc")
-        qty = amount_usdt / price
-        qty = self._round_step(qty, lot)
+        _, lot, min_qty, min_amt = self.get_spot_filters(symbol)
+        qty = self._round_step(amount_usdt / price, lot)
+        # For buys, prefer quote minimal amount when available
+        if side.lower() == "buy" and min_amt > 0 and amount_usdt < min_amt:
+            raise ValueError(f"amount_usdt too small; need at least ~{min_amt:.2f} USDT for buy")
         if qty < min_qty:
             required_usdt = min_qty * price
             raise ValueError(f"amount_usdt too small; need at least ~{required_usdt:.2f} USDT for min qty {min_qty}")
