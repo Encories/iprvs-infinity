@@ -132,6 +132,7 @@ class BybitTrader:
         price: Optional[float] = None,
         reduce_only: bool = False,
         time_in_force: str = "IOC",
+        market_unit: Optional[str] = None,
     ) -> Dict[str, Any]:
         if self.test_mode:
             params: Dict[str, Any] = {
@@ -142,6 +143,8 @@ class BybitTrader:
                 "timeInForce": time_in_force,
                 "qty": str(qty),
             }
+            if market_unit:
+                params["marketUnit"] = market_unit
             self.logger.info(f"TEST MODE: simulate place_order {params}")
             return {"status": "SIMULATED", "result": {"orderId": None}, "request": params}
         params: Dict[str, Any] = {
@@ -152,6 +155,8 @@ class BybitTrader:
             "timeInForce": time_in_force,
             "qty": str(qty),
         }
+        if market_unit:
+            params["marketUnit"] = market_unit
         res = self._with_retry(self.client.place_order, **params)
         return res
 
